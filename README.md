@@ -49,3 +49,4 @@ MORE SOON!
 
 ## Credits
 - Made by @x5ten on discord
+- Translated By @mahan90nn on discord
