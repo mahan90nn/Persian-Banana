@@ -45,7 +45,7 @@ def node():
             os.system('npm install mineflayer express')
 
 def velocity():
-    info('Downloading Velocity [PaperMC]')
+    info('Downloading Velocity [PaperMC.io]')
     download = requests.get(f"https://mineacademy.org/api/velocity/latest")
     os.makedirs('./proxy/velocity/', exist_ok=True)
     with open('./proxy/velocity/velocity.jar', 'wb') as f:
@@ -54,7 +54,7 @@ def velocity():
     time.sleep(1)
 
 def waterfall():
-    info('Downloading Waterfall [PaperMC]')
+    info('Downloading Waterfall [PaperMC.io]')
     download = requests.get(f"https://mineacademy.org/api/waterfall/latest")
     os.makedirs('./proxy/waterfall/', exist_ok=True)
     with open('./proxy/waterfall/waterfall.jar', 'wb') as f:
@@ -75,8 +75,8 @@ def initialize():
 V  \
  \  \_         
   \,'.`-.                                        
-   |\ `. `.                                      Hello {white}{getlogin()}{yellow},
-   ( \  `. `-.                        _,.-:\     please wait while we setup your environment.
+   |\ `. `.                                      dorod {white}{getlogin()}{yellow},
+   ( \  `. `-.                        _,.-:\     lotfan sabr kon ma banana ro nasb konim:).
     \ \   `.  `-._             __..--' ,-';/
      \ `.   `-.   `-..___..---'   _.--' ,'/
       `. `.    `-._        __..--'    ,' /
