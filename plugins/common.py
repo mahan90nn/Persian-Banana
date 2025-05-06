@@ -46,8 +46,9 @@ def loadmenu():
     / _  / _ `/ _ \/ _ `/ _ \/ _ `/
    /____/\_,_/_//_/\_,_/_//_/\_,_/ {white}
 ┣────────────────────────────────────┫
-    {white}Hello {os.getlogin()}. Welcome to {yellow}BANANA
-    {white}Type {yellow}help{white} to view the commands
+    {white}Dorod {os.getlogin()}. Kosh Omadi be {yellow}BANANA
+    {white}benivs {yellow}help{white} ta command haro bebiny
+    {white}Translated By Mr_Stable (@mahan90nn)
 ''')
 
 # Checks if server domain is valid with regex
