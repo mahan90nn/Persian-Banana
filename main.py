@@ -119,6 +119,6 @@ if __name__ == '__main__':
     api()
     while True:
         try:
-            cmd = input(f'{white}{os.getlogin()}@{yellow}banana:~{white}$ ')
+            cmd = input(f'{white}{os.getlogin()}@{yellow}moz:~{white}$ ')
             execmd(cmd)
         except KeyboardInterrupt: pass
