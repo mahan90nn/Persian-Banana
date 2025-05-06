@@ -23,26 +23,26 @@ from plugins.commands.target import target
 scripts = {}
 
 commands = {
-    'server': (server, 1, "Usage: server <address>\nShows information about the server"),
-    'uuid': (puuid, 1, "Usage: uuid <ign>\nShows player's uuid"),
-    'ipinfo': (ipinfo, 1, "Usage: ipinfo <ip>\nShows information about given IP"),
-    'monitor': (monitor, 1, "Usage: monitor <ip>\nMonitors who leaves and joins on a specified server (if queries are enabled)"),
-    'dns': (lookup, 1, "Usage: dns <domain>\nShows all dns records of domain"),
-    'target': (target, 1, "Usage: target <domain>\nShows all subdomains w/ their resolved ips"),
-    'proxy': (proxy, 2, "Usage: proxy <ip> <mode>\nStarts a local Velocity proxy server that redirects to the specified server."),
-    'check': (check, 1, "Usage: check <file>\nCheck the status of Minecraft servers listed in a specified text file"),
-    'scan': (scan, 3, "Usage: scan <ip> <range> <threads>\nCheck the status of Minecraft servers listed in a specified text file\nExample: scan 0.0.0.0 1-65535 10"),
+    'server': (server, 1, "Usage: server <address>\ninfo server ra neson mydahad"),
+    'uuid': (puuid, 1, "Usage: uuid <ign>\nuuid player ra neson mydahad"),
+    'ipinfo': (ipinfo, 1, "Usage: ipinfo <ip>\netlahat ye ip ro neson mydahad"),
+    'monitor': (monitor, 1, "Usage: monitor <ip>\nmybyny ky left va join dar ye server myde! (age queries enable sode base)"),
+    'dns': (lookup, 1, "Usage: dns <domain>\nhame dns hay domain ro neson myde "),
+    'target': (target, 1, "Usage: target <domain>\nhame subdomain haro neson myde w/ their resolved ips"),
+    'proxy': (proxy, 2, "Usage: proxy <ip> <mode>\nye proxy velocity run mykone ke be server connect myde"),
+    'check': (check, 1, "Usage: check <file>\nserver hayy ke toy ye file hastan ro check mykone"),
+    'scan': (scan, 3, "Usage: scan <ip> <range> <threads>\nstatus server minecraft ro check mykone dar ye file \nExample: scan 0.0.0.0 1-65535 10"),
     'clear': (clear, 0, "Clears the screen"),
-    'ogmur': (ogmur, 3, "Usage: ogmur <users_file> <server> <commands_file>\nSends a bot that will execute a list of commands from a file"),
+    'ogmur': (ogmur, 3, "Usage: ogmur <users_file> <server> <commands_file>\nye bot myfrestea az ye file myfreste ke az ye file command ejra mykone"),
     'update': (upd, 0, "Re-Initializes banana"),
-    'kick': (kick, 2, "Usage: kick <username> <server>\nKicks a player from the server (if cracked)"),
-    'shell': (shell, 1, "Usage: shell <port>\nUses netcat to listen to a port"),
-    'connect': (connect, 2, "Usage: connect <username> <server>\nJoins with a bot and allows you to send messages"),
-    'rcon': (rcon, 2, "Usage: rcon <server> <password>\nConnects to a server's rcon"),
-    'brutrcon': (rconbrut, 2, "Usage: brutrcon <server> <file>\nTries the passwords of the file given to try to connect to rcon"),
+    'kick': (kick, 2, "Usage: kick <username> <server>\nye player ra ba join dadan kick myde (age server cracked base)"),
+    'shell': (shell, 1, "Usage: shell <port>\naz netcat estefade mykone ye port ro listen kone"),
+    'connect': (connect, 2, "Usage: connect <username> <server>\nba ye bot join myde va mytony control koni),
+    'rcon': (rcon, 2, "Usage: rcon <server> <password>\nbe rcon server connnect myde"),
+    'brutrcon': (rconbrut, 2, "Usage: brutrcon <server> <file>\npassword hay ye file ro check mykone ke be rcon servre connect bede),
     'fuzz': (fuzz, 3, "Usage: fuzz <website> <file> <threads>\nExample: example.com/FUZZ or FUZZ.example.com"),
-    'sendcmd': (sendcmd, 3, "Usage: sendcmd <username> <server> <commands_file>\nSends a bot that will execute a list of commands from a file"),
-    'exit': (exit, 0, "exit this fuckass app")
+    'sendcmd': (sendcmd, 3, "Usage: sendcmd <username> <server> <commands_file>\nye bot myfreste ke az ye file command ejra mykone"),
+    'exit': (exit, 0, "exit")
 }
 
 def chelp(command=None):
@@ -55,7 +55,7 @@ def chelp(command=None):
         print(msg)
     elif command in scripts:
         print(scripts[command]['usage'])
-    else: print(f'Unknown Command')
+    else: print(f'Command estebah ast')
 
 
 def loadscripts(folder='scripts'):
@@ -109,7 +109,7 @@ def execmd(cmd):
             else:
                 print(script["usage"])
 
-        else: print('Unknown Command')
+        else: print('Command estebah ast')
 
     except Exception as e: error(e)
 
